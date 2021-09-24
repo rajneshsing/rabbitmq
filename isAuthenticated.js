@@ -13,6 +13,8 @@ module.exports = async function isAuthenticated(req, res, next) {
         }
     });
 	*/
+	
+	// new add
 	const bearerHeader = req.headers['authorization'];
     if (typeof bearerHeader !== 'undefined') {
       const bearer = bearerHeader.split(' ');
